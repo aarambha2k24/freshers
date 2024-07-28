@@ -1,0 +1,121 @@
+@font-face {
+    font-family: expansiva;
+    src: url(./Expansiva.otf);
+}
+
+@font-face {
+    font-family: expab;
+    src: url(./Expansiva\ bold.otf);
+}
+
+@font-face {
+    font-family: rightsport;
+    src: url(./rigsport-3lar6.otf);
+}
+
+@font-face {
+    font-family: nextstep;
+    src: url(./NEXTSTEP.ttf);
+}
+
+@font-face {
+    font-family: akira;
+    src: url(./Akira\ Expanded\ Demo.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:600px) {
+
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .overlay{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-image: url("https://wallpapers.com/images/hd/dark-gradient-6bly12umg2d4psr2.jpg");
+        background-position: top;
+        text-align: center;
+    }
+
+    .overlay .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        gap: 3vw;
+        flex-direction: column;
+        font-family: akira;
+        color: white;
+        /* background-color: red; */
+    }
+    
+    .overlay .text h2{
+        margin-top: 5vh;
+        font-size: 2vh;
+        font-family: expab;
+    }
+
+    .cont{
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        color: white;
+        /* background-color: red; */
+    }
+
+    .cont h1{
+        font-size: 1.5vh;
+        font-family: akira;
+    }
+
+    .cont span{
+        font-family: nextstep;
+        font-size: 1.5vh;
+        font-weight: 600;
+    }
+
+    .cont input{
+        width: 50%;
+        padding: 2vh 5vh;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        font-size: 3vh;
+    }
+
+    .cont input::placeholder{
+        font-size: 1.5vh;
+        font-family: akira;
+    }
+
+    .cont button{
+        font-size: 2.5vh;
+        font-family: akira;
+        padding: 1vh 3vh;
+        border: 1px solid white;
+        border-radius: 30px;
+        color: white;
+        background-color: #071A28;
+    }
+
+}

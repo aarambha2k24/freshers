@@ -1,0 +1,452 @@
+@font-face {
+    font-family: expansiva;
+    src: url(./Expansiva.otf);
+}
+@font-face {
+    font-family: ds;
+    src: url(./DancingScript.ttf);
+}
+
+@font-face {
+    font-family: expab;
+    src: url(./Expansiva\ bold.otf);
+}
+
+@font-face {
+    font-family: rightsport;
+    src: url(./rigsport-3lar6.otf);
+}
+
+@font-face {
+    font-family: nextstep;
+    src: url(./NEXTSTEP.ttf);
+}
+
+@font-face {
+    font-family: akira;
+    src: url(./Akira\ Expanded\ Demo.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .main{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+    }
+
+    marquee{
+        color: white;
+        font-family: akira;
+        padding: 2vh 0;
+        font-size: 3vh;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 0; /* Adjust the top value to make sure it doesn't overlap with marquee */
+        height: 7%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vh 1vh;
+        z-index: 100; /* Ensure it's below the marquee */
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+    }
+
+    .navbar img{
+        padding-right: 2vh;
+        height: 5vh;
+        pointer-events: none;
+    }
+
+    .navbar i{
+        padding-left: 2vh;
+        font-size: 4vh;
+        color: white;
+    }
+
+    .navfs{
+        z-index: 98;
+        opacity: 0;
+        position: fixed;
+        top: 10%;
+        right: -100%;
+        height: 50vh;
+        width: 80%;
+        border-radius: 10px;
+        backdrop-filter: blur(50px) ;
+        -webkit-backdrop-filter: blur(50px);
+        box-shadow: -10px 0 10px black;
+        background-color: rgba(255, 255, 255, 0.299);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-family: akira;
+    }
+
+    .navfs .links h1{
+        color: rgb(239, 238, 238);
+        font-size: 3.5vh;
+        margin-bottom: 2vh;
+        user-select: none;
+    }
+
+    .home{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: radial-gradient(#08283f, rgb(12, 11, 11));
+    }
+
+    .home h1{
+        color: white;
+        font-family: akira;
+        font-weight: 100;
+        position: absolute;
+        top: 12%;
+        text-align: center;
+    }
+
+    .home span{
+        font-family: akira;
+    }
+
+    .home .vid{
+        position: absolute;
+        top: 30%;
+        height: 68%;
+        width: 82%;
+        border: 1px solid white;
+        background-color: white;
+    }
+
+    .theme{
+        height: 220vh;
+        width: 100%;
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .theme .txt{
+        text-align: center;
+    }
+
+    .theme .txt h2{
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        font-family: expab;
+        font-size: 2.5vh;
+        color: white;
+    }
+
+    .theme .txt h1{
+        color: white;
+        font-family: akira;
+        margin-bottom: 7vh;
+    }
+    .theme .txt span{
+        color:#40d8f3;
+        font-family: ds;
+    }
+
+    .theme .txt p{
+        color: white;
+        font-family: expab;
+        margin-bottom: 7vh;
+        font-size: 2vh;
+        line-height: 3.5vh;
+    }
+
+    .theme .txt h3{
+        color: rgba(255, 255, 255, 0.738);
+        width: 100%;
+        font-size: 2vh;
+        font-family: akira;
+        margin-bottom: 10vh;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin-bottom: 10vh;
+    }
+
+    .box h1{
+        text-align: center;
+        color: white;
+        font-family: akira;
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .box img{
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .box p{
+        text-align: center;
+        color: white;
+        font-family: rightsport;
+        font-size: 2.5vh;
+        width: 100%;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin-bottom: 10vh;
+    }
+
+    .box2 h1{
+        text-align: center;
+        color: white;
+        font-family: akira;
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .box2 img{
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .box2 p{
+        text-align: center;
+        color: white;
+        font-family: rightsport;
+        font-size: 2.5vh;
+        width: 100%;
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin-bottom: 10vh;
+    }
+
+    .box3 h1{
+        text-align: center;
+        color: white;
+        font-family: akira;
+        font-size: 3vh;
+        width: 100%;
+    }
+
+    .box3 img{
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .box3 p{
+        text-align: center;
+        color: white;
+        font-family: rightsport;
+        font-size: 2.5vh;
+        width: 100%;
+    }
+
+    .highlights{
+        font-family: akira;
+        text-align: center;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+    }
+
+    .highlights h1{
+        margin-top: 10vh;
+        color: white;
+    }
+    .highlights p{
+        padding: 1vh 2vh;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        font-size: 1.5vh;
+        color: rgba(255, 255, 255, 0.595);
+    }
+
+    .highlights .slider{
+        display: flex;
+        gap: 2vh;
+        overflow-x: auto;
+        margin-bottom: 2vh;
+        /* border-bottom: 1px solid white; */
+    }
+
+    .slider ::-webkit-scrollbar{
+        width: 0;
+        display: none;
+    }
+
+    .highlights .slider img{
+        margin-top: 2vh;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        border: 1px solid white;
+        user-select: none;
+    }
+
+    .countdown{
+        height: 30vh;
+        width: 100%;
+        text-align: center;
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+        color: #fff;
+        padding: 20px;
+
+    }
+
+    
+    .countdown h2 {
+        font-family: akira;
+        margin-bottom: 20px;
+    }
+    
+     .countdown #cd {
+        display: flex;
+        justify-content: center;
+        border: 2px solid white;
+        height: 10vh;
+        padding-top: 2vh;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #cd div {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        font-family: akira;
+        height: 5vh;
+        width: 20%;
+        margin: 0 10px;
+        font-size: 1.5vh;
+    }
+    
+    #cd span {
+        padding-left: 2vh;
+        text-align: center;
+        height: 5vh;
+        width: 20%;
+        display: block;
+        font-size: 3vh;
+        
+    }
+
+    #cd p{
+        text-align: center;
+        /* color: black; */
+    }
+    
+    .invitation{
+        /* border: 1px solid gray; */
+
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+        height: 55vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* justify-content: center; */
+    }
+    .invitation h1{
+        font-family: akira;
+        color: white;
+        margin-bottom: 5vh;
+    }
+    .invitation h2{
+        font-family: akira;
+        font-size: 2.5vh;
+        color: rgba(255, 255, 255, 0.552);
+    }
+    .invitation .download-button{
+        text-decoration: none;
+        margin-top: 3vh;
+        padding: 2vh 4vh;
+        font-family: akira;
+        border-radius: 20px;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        
+    }
+    .faq{
+        height: 60vh;
+        width: 100%;
+        background: radial-gradient(#08283f, rgb(12, 11, 11));
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 5vh;
+        
+    }
+
+    .faq h1{
+        color: white;
+        font-family: akira;
+        margin-bottom: 5vh;
+    }
+
+    .faq .qn{
+        height: 5vh;
+        width: 90%;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 0.5vh 4vh;
+        font-family: akira;
+        /* background-color: red; */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .qn i{
+        text-align: center;
+        font-size: 3.5vh;
+    }
+    .faq .ans{
+        display: none;
+        margin-top: 3vh;
+        width: 90%;
+        color: white;
+        margin-bottom: 3vh;
+        font-family: rightsport;
+    }
+
+}
