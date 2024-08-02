@@ -42,14 +42,14 @@ window.addEventListener('scroll', function() {
 });
 
 // Set the date we're counting down to
-const countDownDate = new Date("2024-08-03T00:00:00").getTime();
+const countDownDate = new Date("2024-08-03T10:00:00").getTime();
 
 // Update the countdown every 1 second
 const x = setInterval(function() {
     // Get the current date and time
     const now = new Date().getTime();
 
-    // Calculate the distance between now and the count down date
+    // Calculate the distance between now and the countdown date
     const distance = countDownDate - now;
 
     // Calculate time units
@@ -70,8 +70,6 @@ const x = setInterval(function() {
         document.querySelector(".countdown-container").innerHTML = "<h2>EXPIRED</h2>";
     }
 }, 1000);
-
-
 
 
 
